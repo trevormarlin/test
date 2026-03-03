@@ -377,7 +377,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 2r
           <div class="contact-detail-text"><span class="detail-label">Location</span><span class="detail-val">Reno, Nevada</span></div>
         </div>
       </div>
-      <div class="form">
+      <div class="form" action="https://formspree.io/f/mojngevp" method="POST">
         <div class="form-row">
           <div class="field"><label for="fn">First Name</label><input type="text" id="fn" placeholder="Jane"/></div>
           <div class="field"><label for="ln">Last Name</label><input type="text" id="ln" placeholder="Doe"/></div>
@@ -386,10 +386,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 2r
         <div class="field"><label for="sub">Subject</label><input type="text" id="sub" placeholder="Project inquiry, hiring, etc."/></div>
         <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="Tell me about your project or opportunity…"></textarea></div>
         <div class="form-submit">
-          <button class="btn btn-primary" onclick="handleSubmit()">Send Message</button>
+          <button type="submit" class="btn btn-primary">Send Message</button>
           <span id="formMsg">✓ Message sent!</span>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </section>
@@ -413,5 +413,6 @@ window.addEventListener('scroll',function(){var cur='';secs.forEach(function(s){
 </body>
 
 </html>
+
 
 
